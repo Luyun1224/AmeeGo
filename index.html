@@ -89,8 +89,8 @@
         }
         .itinerary-item {
             display: flex;
-            align-items: center;
-            margin-bottom: 0.5rem;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
         }
         
         /* Notes section style */
@@ -106,6 +106,21 @@
             height: 1.5rem; /* 24px */
             color: var(--theme-dark-blue);
             margin-top: 0.125rem;
+        }
+        .timeline-connector {
+            display: flex;
+            align-items: center;
+            margin: 0.5rem 0 0.5rem 0.7rem;
+            color: #9ca3af; /* gray-400 */
+        }
+        .timeline-connector .line {
+            border-left: 2px dotted #d1d5db; /* gray-300 */
+            height: 2rem;
+            margin-left: 0.45rem;
+        }
+        .timeline-connector span {
+            margin-left: 1rem;
+            font-style: italic;
         }
 
     </style>
@@ -128,9 +143,9 @@
 
         <!-- Tab Buttons -->
         <div class="tab-button-container rounded-xl shadow-md mb-8">
-            <button class="tab-button active" data-tab="pre-trip">行前準備</button>
+            <button class="tab-button" data-tab="pre-trip">行前準備</button>
             <button class="tab-button" data-tab="day1">Day 1 (8/21)</button>
-            <button class="tab-button" data-tab="day2">Day 2 (8/22)</button>
+            <button class="tab-button active" data-tab="day2">Day 2 (8/22)</button>
             <button class="tab-button" data-tab="day3">Day 3 (8/23)</button>
             <button class="tab-button" data-tab="day4">Day 4 (8/24)</button>
             <button class="tab-button" data-tab="day5">Day 5 (8/25)</button>
@@ -145,8 +160,8 @@
         <!-- Tab Content Panels -->
         <div class="bg-white rounded-xl shadow-md p-6 md:p-8">
             <!-- Pre-trip Panel -->
-            <div id="pre-trip" class="tab-panel active">
-                <h3 class="text-2xl font-bold mb-6 text-main">🧳 行前準備清單</h3>
+            <div id="pre-trip" class="tab-panel">
+                <h3 class="text-2xl font-bold mb-6 text-main">� 行前準備清單</h3>
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     <!-- Column 1: Documents & Language -->
                     <div class="space-y-8">
@@ -217,51 +232,89 @@
             </div>
 
             <!-- Day 2 Panel -->
-            <div id="day2" class="tab-panel">
-                <h3 class="text-2xl font-bold mb-6 text-main">Day 2 - 8/22 (五): 抵達熱情的巴塞隆納</h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Column 1: Itinerary & Hotel -->
-                    <div class="space-y-6">
-                        <div>
-                            <h4 class="font-bold text-lg mb-2 text-spain">✈️ 航班行程</h4>
-                            <div class="itinerary-item"><span class="time-badge">00:20 - 08:50</span><span>搭乘國泰航空 CX315 飛往馬德里 (MAD)</span></div>
-                            <div class="itinerary-item"><span class="time-badge">11:25 - 12:45</span><span>轉乘伊比利亞航空 ✈️ 抵達巴塞隆納 (BCN)！</span></div>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-lg mb-2 text-spain">🏨 住宿資訊</h4>
-                             <div class="notes-item">
-                               <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m-3-1L11.25 3l-1.5.545m9.456 5.656-3-1m-1.5.545-3-1m3 1 3 1M9 12l-3 1m-3-1 3-1m12 3-3 1m3-1-3-1" /></svg>
-                               <div><strong>飯店:</strong><br>巴塞隆納ZT黃金酒店<br>(ZT The Golden Hotel Barcelona)</div>
-                            </div>
-                            <div class="itinerary-item"><span class="time-badge">下午</span><span>前往飯店Check-in，稍作休息</span></div>
-                        </div>
-                    </div>
-                    <!-- Column 2: Map -->
-                    <div class="rounded-lg overflow-hidden shadow-lg min-h-[300px]">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.269992520842!2d2.197908315426019!3d41.41162497926214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a33427c394c3%3A0x242242623353895a!2sZT%20The%20Golden%20Hotel%20Barcelona!5e0!3m2!1szh-TW!2stw!4v1689787812345!5m2!1szh-TW!2stw" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <!-- Column 3: Nearby Attractions -->
+            <div id="day2" class="tab-panel active">
+                <h3 class="text-2xl font-bold mb-6 text-main">Day 2 - 8/22 (五): 抵達與經典建築巡禮</h3>
+                <div class="space-y-4">
+                    <div class="itinerary-item"><span class="time-badge">上午</span><div><strong>抵達巴塞隆納</strong><br><span class="text-sm text-gray-600">00:20-08:50 搭乘 CX315 抵達馬德里，11:25-12:45 轉機抵達巴塞隆納(BCN)。<br>前往飯店 ZT The Golden Hotel Barcelona 辦理入住。</span></div></div>
+                    <div class="timeline-connector"><div class="line"></div><span>搭乘地鐵 L4 (黃線) 從 Llacuna 站到 Jaume I 站</span></div>
+                    <div class="itinerary-item"><span class="time-badge">15:30 - 17:00</span><div><strong>巴塞隆納主教堂 & 哥德區散步</strong><br><span class="text-sm text-gray-600">探索舊城區心臟地帶，感受古羅馬至今的歷史脈動與錯綜複雜的迷人巷弄。</span></div></div>
+                    <div class="timeline-connector"><div class="line"></div><span>步行約 15-20 分鐘 (1.2 公里)</span></div>
+                    <div class="itinerary-item"><span class="time-badge">17:00 - 18:00</span><div><strong>CASA LOEWE 逛店</strong><br><span class="text-sm text-gray-600">在格拉西亞大道上，欣賞西班牙頂級皮件品牌的旗艦店建築與工藝。</span></div></div>
+                    <div class="timeline-connector"><div class="line"></div><span>步行約 1 分鐘 (100 公尺)</span></div>
+                    <div class="itinerary-item"><span class="time-badge">18:00 - 19:30</span><div><strong>巴特婁之家 (Casa Batlló)</strong><br><span class="text-sm text-gray-600">高第的奇幻之作，以海洋為靈感，充滿流動線條與色彩斑斕的馬賽克。(18:15 入場)</span></div></div>
+                    <div class="timeline-connector"><div class="line"></div><span>步行約 7 分鐘 (550 公尺)</span></div>
+                    <div class="itinerary-item"><span class="time-badge">19:30 - 20:00</span><div><strong>米拉之家 (Casa Milà)</strong><br><span class="text-sm text-gray-600">欣賞「採石場」獨特波浪狀外觀，並期待在屋頂露台欣賞日落美景。</span></div></div>
+                    <div class="timeline-connector"><div class="line"></div><span>步行約 10-15 分鐘</span></div>
+                    <div class="itinerary-item"><span class="time-badge">20:00 - 22:00</span><div><strong>晚餐時間</strong><br><span class="text-sm text-gray-600">從米拉之家散步至餐廳，享受在巴塞隆納的第一頓晚餐。</span></div></div>
                     <div>
-                        <h4 class="font-bold text-lg mb-2 text-spain">📍 周邊景點建議</h4>
-                        <ul class="space-y-3">
-                            <li class="flex items-start"><span class="text-blue-500 mr-2 mt-1">🏖️</span><div><strong>博加特爾海灘 (Platja de Bogatell)</strong><br><span class="text-sm text-gray-500">悠閒的海灘，適合散步放鬆 (步行約15分)</span></div></li>
-                            <li class="flex items-start"><span class="text-blue-500 mr-2 mt-1">🌳</span><div><strong>波布雷諾新大街 (Rambla del Poblenou)</strong><br><span class="text-sm text-gray-500">充滿當地風情的林蔭道，有許多餐廳與小店 (步行約10分)</span></div></li>
-                            <li class="flex items-start"><span class="text-blue-500 mr-2 mt-1">🏙️</span><div><strong>光榮大樓 (Torre Glòries)</strong><br><span class="text-sm text-gray-500">造型獨特的現代建築地標 (步行約15分)</span></div></li>
-                        </ul>
+                        <h4 class="font-bold text-lg mb-2 text-green-600">🍽️ 晚餐建議 (蛋奶素友善)</h4>
+                        <div class="notes-item">
+                           <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg>
+                           <div><strong>首選: Teresa Carles</strong><br>
+                                <span class="text-sm text-gray-600">必點素食: 烤蘑菇核桃千層、菠菜奶酪卡諾利<br>葷食者熱門: 蛋香布里歐香蒜鮭魚</span>
+                           </div>
+                        </div>
+                        <div class="notes-item">
+                           <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg>
+                           <div><strong>備案: Flax & Kale Passage</strong><br>
+                                <span class="text-sm text-gray-600">必點素食: 南洋風味燉菜飯、Beyond Meat Burger<br>葷食者熱門: 可持續漁場的鮭魚牛油果 bowl</span>
+                           </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Day 3 Panel -->
             <div id="day3" class="tab-panel">
-                 <h3 class="text-2xl font-bold mb-6 text-main">Day 3 - 8/23 (六): 自由探索日</h3>
-                 <p>本日為自由時間，可以開始探索巴塞隆納的魅力！</p>
+                 <h3 class="text-2xl font-bold mb-6 text-main">Day 3 - 8/23 (六): 高第建築奇幻之旅</h3>
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Column 1: Itinerary -->
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 text-spain">📍 上午行程</h4>
+                            <div class="itinerary-item"><span class="time-badge">09:00 - 10:30</span><span>聖家堂 09:00 時段 (+塔樓自選)</span></div>
+                            <div class="itinerary-item"><span class="time-badge">10:45 - 12:00</span><span>聖保羅現代主義園區</span></div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 text-spain">📍 下午行程</h4>
+                            <div class="itinerary-item"><span class="time-badge">14:00 - 15:15</span><span>米拉之家內部導覽 (14:00 時段)</span></div>
+                            <div class="itinerary-item"><span class="time-badge">15:30 - 16:00</span><span>咖啡 + 公車 24 / V19 前往桂爾公園</span></div>
+                            <div class="itinerary-item"><span class="time-badge">16:30 - 18:30</span><span>桂爾公園 16:30—17:00 入場</span></div>
+                        </div>
+                    </div>
+                    <!-- Column 2: Dining -->
+                    <div>
+                        <h4 class="font-bold text-lg mb-2 text-green-600">🍽️ 餐飲</h4>
+                        <div class="itinerary-item"><span class="time-badge">12:30 - 14:00</span><span>午餐: Honest Greens Gran de Gràcia</span></div>
+                        <div class="itinerary-item"><span class="time-badge">19:00 - </span><span>晚餐: Veg World India (備案: La Paradeta Gràcia)</span></div>
+                    </div>
+                </div>
             </div>
 
             <!-- Day 4 Panel -->
             <div id="day4" class="tab-panel">
-                <h3 class="text-2xl font-bold mb-6 text-main">Day 4 - 8/24 (日): 自由探索日</h3>
-                <p>本日為自由時間，繼續您的巴塞隆納冒險！</p>
+                <h3 class="text-2xl font-bold mb-6 text-main">Day 4 - 8/24 (日): 藝術購物與海港風情</h3>
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Column 1: Itinerary -->
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 text-spain">📍 上午行程</h4>
+                            <div class="itinerary-item"><span class="time-badge">10:00 - 12:00</span><span>加泰隆尼亞國家藝術館 (MNAC) — 週日免費時段</span></div>
+                            <div class="itinerary-item"><span class="time-badge">12:00 - 13:00</span><span>魔幻噴泉 / 西班牙廣場拍照</span></div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 text-spain">📍 下午行程</h4>
+                            <div class="itinerary-item"><span class="time-badge">16:00 - 18:00</span><span>Passeig de Gràcia 最終採購 (El Corte Inglés 11:00—21:00)</span></div>
+                            <div class="itinerary-item"><span class="time-badge">夜間</span><span>Port Vell & Barceloneta 海邊夜景散步</span></div>
+                        </div>
+                    </div>
+                    <!-- Column 2: Dining -->
+                    <div>
+                        <h4 class="font-bold text-lg mb-2 text-green-600">🍽️ 餐飲</h4>
+                        <div class="itinerary-item"><span class="time-badge">14:00 - 15:30</span><span>午餐: El Nacional (多餐廳聯合空間)</span></div>
+                        <div class="itinerary-item"><span class="time-badge">19:30 - 22:00</span><span>晚餐: The Green Spot Port Vell (備案: Flax & Kale Tallers)</span></div>
+                    </div>
+                </div>
             </div>
 
             <!-- Day 5 Panel -->
@@ -399,8 +452,12 @@
                     setActiveTab(button.dataset.tab);
                 });
             });
+
+            // Set initial active tab
+            setActiveTab('day2');
         });
     </script>
 
 </body>
 </html>
+�
