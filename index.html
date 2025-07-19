@@ -144,62 +144,71 @@
 
         <!-- Tab Buttons -->
         <div class="tab-button-container rounded-xl shadow-md mb-8">
-            <button class="tab-button" data-tab="pre-trip">行前準備</button>
+            <button class="tab-button active" data-tab="pre-trip">行前準備</button>
             <button class="tab-button" data-tab="day1">Day 1 (8/21)</button>
             <button class="tab-button" data-tab="day2">Day 2 (8/22)</button>
             <button class="tab-button" data-tab="day3">Day 3 (8/23)</button>
             <button class="tab-button" data-tab="day4">Day 4 (8/24)</button>
             <button class="tab-button" data-tab="day5">Day 5 (8/25)</button>
             <button class="tab-button" data-tab="day6">Day 6 (8/26)</button>
-            <button class="tab-button active" data-tab="day7">Day 7 (8/27)</button>
+            <button class="tab-button" data-tab="day7">Day 7 (8/27)</button>
             <button class="tab-button" data-tab="day8">Day 8 (8/28)</button>
             <button class="tab-button" data-tab="day9">Day 9 (8/29)</button>
             <button class="tab-button" data-tab="day10">Day 10 (8/30)</button>
             <button class="tab-button" data-tab="day11">Day 11 (8/31)</button>
+            <button class="tab-button" data-tab="backup-plans">備用方案</button>
         </div>
 
         <!-- Tab Content Panels -->
         <div class="bg-white rounded-xl shadow-md p-6 md:p-8">
             <!-- Pre-trip Panel -->
-            <div id="pre-trip" class="tab-panel">
-                <h3 class="text-2xl font-bold mb-6 text-main">� 行前準備清單</h3>
+            <div id="pre-trip" class="tab-panel active">
+                <h3 class="text-2xl font-bold mb-6 text-main">🧳 行前準備清單</h3>
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <!-- Column 1: Documents & Language -->
+                    <!-- Column 1: Documents & Money -->
                     <div class="space-y-8">
                         <div>
-                            <h4 class="text-xl font-bold mb-4">📄 重要文件</h4>
+                            <h4 class="text-xl font-bold mb-4">📄 文件與金錢</h4>
                             <ul class="space-y-3">
                                 <li class="flex items-center"><span class="text-green-500 mr-2">✅</span>護照</li>
                                 <li class="flex items-center"><span class="text-green-500 mr-2">✅</span>旅行保險 (醫療／意外／旅損)</li>
                                 <li class="flex items-center"><span class="text-green-500 mr-2">✅</span>機票與住宿憑證 (列印＋手機PDF)</li>
+                                <li class="flex items-center"><span class="text-green-500 mr-2">✅</span>國際信用卡 (Visa / MasterCard)</li>
+                                <li class="flex items-center"><span class="text-green-500 mr-2">✅</span>歐元現金 (建議換些小鈔)</li>
                             </ul>
                         </div>
                         <div>
-                            <h4 class="text-xl font-bold mb-4">🗣 語言小提醒</h4>
-                            <p> • 西班牙主要語言為 西班牙文 (巴塞隆納亦通加泰隆尼亞語)</p>
-                            <p> • 巴黎主要為 法文，英文通用程度有限</p>
+                            <h4 class="text-xl font-bold mb-4">🎒 行李與衣物打包</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-center"><span class="text-blue-500 mr-2">👟</span>舒適可久走鞋 1 雙</li>
+                                <li class="flex items-center"><span class="text-blue-500 mr-2">🔌</span>轉接插頭 (歐洲標準兩孔 Type C)</li>
+                                <li class="flex items-center"><span class="text-blue-500 mr-2">📶</span>網路準備 (eSIM / WiFi機)</li>
+                                <li class="flex items-center"><span class="text-blue-500 mr-2">🔋</span>行動電源、充電線</li>
+                                <li class="flex items-center"><span class="text-blue-500 mr-2">💊</span>個人常備藥包</li>
+                                <li class="flex items-center"><span class="text-blue-500 mr-2">🧴</span>防曬乳、個人盥洗用品</li>
+                                <li class="flex items-center"><span class="text-blue-500 mr-2">🔒</span>防盜貼身包、包包扣環</li>
+                            </ul>
                         </div>
                     </div>
-                    <!-- Column 2: Luggage -->
-                    <div>
-                        <h4 class="text-xl font-bold mb-4">🎒 行李與衣物打包</h4>
-                        <ul class="space-y-3">
-                            <li class="flex items-center"><span class="text-blue-500 mr-2">👟</span>舒適可久走鞋 1 雙</li>
-                            <li class="flex items-center"><span class="text-blue-500 mr-2">🔌</span>轉接插頭 (歐洲標準兩孔 Type C)</li>
-                            <li class="flex items-center"><span class="text-blue-500 mr-2">📶</span>網路準備 (eSIM / WiFi機)</li>
-                            <li class="flex items-center"><span class="text-blue-500 mr-2">🔋</span>行動電源、充電線、延長線</li>
-                            <li class="flex items-center"><span class="text-blue-500 mr-2">💊</span>小藥包 (腸胃藥、感冒藥、個人處方)</li>
-                            <li class="flex items-center"><span class="text-blue-500 mr-2">🧴</span>盥洗用品</li>
-                            <li class="flex items-center"><span class="text-blue-500 mr-2">🛍️</span>束口袋／壓縮袋</li>
-                            <li class="flex items-center"><span class="text-blue-500 mr-2">🎒</span>小背包 (日常觀光用)</li>
-                            <li class="flex items-center"><span class="text-blue-500 mr-2">🚪</span>房間防盜鈴</li>
-                            <li class="flex items-center"><span class="text-blue-500 mr-2">🔒</span>防盜貼身包、包包扣環</li>
-                        </ul>
-                    </div>
-                    <!-- Column 3: Safety -->
-                    <div>
-                        <h4 class="text-xl font-bold mb-4">🛡️ 安全與緊急應變</h4>
-                        <div class="space-y-4">
+                    <!-- Column 2: Strategy & Safety -->
+                    <div class="space-y-8">
+                        <div>
+                            <h4 class="text-xl font-bold mb-4">💡 交通與票券策略</h4>
+                             <div class="notes-item">
+                               <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                               <div><strong>巴塞隆納:</strong> 推薦購買 <strong>Hola Barcelona 旅遊卡</strong>。此卡專注交通，性價比高，包含機場交通。</div>
+                            </div>
+                            <div class="notes-item">
+                               <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                               <div><strong>巴黎:</strong> 推薦購買 <strong>Navigo Découverte 週票</strong>。此票券完美覆蓋您的停留時間，包含機場交通，價值超凡。<strong>(提醒: 需自備一張 2.5x3cm 證件照)</strong></div>
+                            </div>
+                             <div class="notes-item">
+                               <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-12v.75m0 3v.75m0 3v.75m0 3V18m-9-12v.75m0 3v.75m0 3v.75m0 3V18m9-12v.75m0 3v.75m0 3v.75m0 3V18m-9-12v.75m0 3v.75m0 3v.75m0 3V18" /></svg>
+                               <div><strong>門票策略:</strong> <strong>立即預訂！</strong> 聖家堂、桂爾公園、巴特婁之家、米拉之家、艾菲爾鐵塔、羅浮宮等核心景點門票極其搶手，請務必透過官網提前預訂。</div>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-4">🛡️ 安全與緊急應變</h4>
                             <div class="notes-item">
                                <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h12A2.25 2.25 0 0 0 20.25 14.25V3m-16.5 0h16.5m-16.5 0H3.75m16.5 0h.008v.008h-.008V3Zm-12 6h.008v.008h-.008V9Zm2.25 0h.008v.008h-.008V9Zm2.25 0h.008v.008h-.008V9Zm2.25 0h.008v.008h-.008V9Z" /></svg>
                                <div><strong>治安:</strong> 西班牙與巴黎皆有扒手高發地區。建議使用貼身腰包，手提包不離身，並避免在戶外露出高價電子產品。</div>
@@ -213,6 +222,14 @@
                             </div>
                         </div>
                     </div>
+                     <!-- Column 3: Health & Weather -->
+                    <div>
+                        <h4 class="text-xl font-bold mb-4">☀️ 健康與天氣提醒</h4>
+                        <div class="notes-item bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded-r-lg">
+                           <svg class="notes-icon text-yellow-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" /></svg>
+                           <div><strong class="text-yellow-800">歐洲熱浪注意！</strong><br>目前歐洲正經歷熱浪，氣溫可能較高。請務必做好防曬措施、多補充水分、戴太陽眼鏡與帽子，並盡量利用陰涼處休息，避免長時間曝曬。</div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
@@ -224,10 +241,11 @@
                         <h4 class="font-bold text-lg mb-2 text-spain">✈️ 行程</h4>
                         <div class="itinerary-item"><span class="time-badge">傍晚</span><span>在高雄國際機場(KHH)集合，準備出發！</span></div>
                         <div class="itinerary-item"><span class="time-badge">19:10 - 20:50</span><span>搭乘國泰航空 CX459 飛往香港 (HKG) 轉機</span></div>
+                         <div class="itinerary-item"><span class="time-badge">00:20 - 08:50 (+1)</span><span>搭乘國泰航空 CX315 飛往馬德里 (MAD)</span></div>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-lg mb-2 text-green-600">🍽️ 餐飲</h4>
-                        <p> • 晚餐：機上精緻晚餐</p>
+                    <div class="border-t pt-6">
+                        <h4 class="font-bold text-lg mb-2 text-blue-800">📝 行程檢視</h4>
+                        <p class="text-gray-700"><strong>高風險轉機提醒：</strong>從馬德里(MAD)轉機至巴塞隆納(BCN)的時間僅有2小時35分鐘。您需要在馬德里辦理入境申根區手續，時間極為緊張。強烈建議與航空公司確認行李是否能直掛至巴塞隆納，並預先查詢後續航班資訊作為備案。</p>
                     </div>
                 </div>
             </div>
@@ -238,33 +256,33 @@
                 <div class="space-y-6">
                     <div>
                         <h4 class="font-bold text-lg mb-2 text-spain">📍 行程規劃</h4>
-                        <div class="itinerary-item"><span class="time-badge">上午</span><div><strong>抵達巴塞隆納</strong><br><span class="text-sm text-gray-600">00:20-08:50 搭乘 CX315 抵達馬德里，11:25-12:45 轉機抵達巴塞隆納(BCN)。<br>前往飯店 ZT The Golden Hotel Barcelona 辦理入住。</span></div></div>
+                        <div class="itinerary-item"><span class="time-badge">11:25 - 12:45</span><div><strong>轉機並抵達巴塞隆納</strong><br><span class="text-sm text-gray-600">從馬德里轉機，抵達巴塞隆納(BCN)。<br>前往飯店 ZT The Golden Hotel Barcelona 辦理入住。</span></div></div>
                         <div class="timeline-connector"><div class="line"></div><span>搭乘地鐵 L4 (黃線) 從 Llacuna 站到 Jaume I 站</span></div>
                         <div class="itinerary-item"><span class="time-badge">15:30 - 17:00</span><div><strong>巴塞隆納主教堂 & 哥德區散步</strong><br><span class="text-sm text-gray-600">探索舊城區心臟地帶，感受古羅馬至今的歷史脈動與錯綜複雜的迷人巷弄。</span></div></div>
                         <div class="timeline-connector"><div class="line"></div><span>步行約 15-20 分鐘 (1.2 公里)</span></div>
                         <div class="itinerary-item"><span class="time-badge">17:00 - 18:00</span><div><strong>CASA LOEWE 逛店 (格拉西亞大道)</strong><br><span class="text-sm text-gray-600">在格拉西亞大道 (Passeig de Gràcia) 上，欣賞西班牙頂級皮件品牌的旗艦店建築與工藝。</span></div></div>
                         <div class="timeline-connector"><div class="line"></div><span>步行約 1 分鐘 (100 公尺)</span></div>
-                        <div class="itinerary-item"><span class="time-badge">18:00 - 19:30</span><div><strong>巴特婁之家 (Casa Batlló)</strong><br><span class="text-sm text-gray-600">高第的奇幻之作，以海洋為靈感，充滿流動線條與色彩斑斕的馬賽克。(18:15 入場)</span></div></div>
+                        <div class="itinerary-item"><span class="time-badge">18:15 - 19:30</span><div><strong>巴特婁之家 (Casa Batlló)</strong><br><span class="text-sm text-gray-600">高第的奇幻之作，以海洋為靈感，充滿流動線條與色彩斑斕的馬賽克。</span></div></div>
                         <div class="timeline-connector"><div class="line"></div><span>步行約 7 分鐘 (550 公尺)</span></div>
-                        <div class="itinerary-item"><span class="time-badge">19:30 - 20:00</span><div><strong>米拉之家 (Casa Milà)</strong><br><span class="text-sm text-gray-600">欣賞「採石場」獨特波浪狀外觀，並期待在屋頂露台欣賞日落美景。</span></div></div>
+                        <div class="itinerary-item"><span class="time-badge">19:30 onwards</span><div><strong>米拉之家 (Casa Milà) 外觀 & 晚餐</strong><br><span class="text-sm text-gray-600">欣賞「採石場」獨特波浪狀外觀，之後在附近享用晚餐。</span></div></div>
                     </div>
                     <div class="border-t pt-6">
                         <h4 class="font-bold text-lg mb-2 text-blue-800">📝 行程檢視</h4>
-                        <p class="text-gray-700">您將於中午抵達巴塞隆納並前往飯店稍事休息，15:30 開始在哥德區散步。下午行程包括巴塞隆納主教座堂、漫步哥德區巷弄（約1.5小時），再步行約20分鐘前往格拉西亞大道的 LOEWE 旗艦店參觀（預計停留1小時）。之後18:15 預訂了巴特婁之家（Casa Batlló）的入場參觀（約1.5小時），19:30 再步行約7分鐘欣賞米拉之家外觀。整體動線順暢，但由於您前一晚長途飛行可能疲憊，建議視體力調整：例如原計畫中的 LOEWE 店面可改在第4日購物時段再造訪；哥德區漫步時間也可彈性縮短，以確保18:15 前抵達巴特婁之家。米拉之家當晚僅觀賞外觀即可，時間可彈性掌握。若班機延誤或體力不支，以上彈性調整能確保重點行程順利進行。</p>
+                        <p class="text-gray-700">由於您前一晚長途飛行可能疲憊，建議視體力調整：例如 LOEWE 店面可改在第4日購物時段再造訪；哥德區漫步時間也可彈性縮短，以確保18:15 前抵達巴特婁之家。若班機延誤或體力不支，以上彈性調整能確保重點行程順利進行。</p>
                     </div>
                     <div class="border-t pt-6">
                         <h4 class="font-bold text-lg mb-2 text-green-600">🍽️ 用餐建議</h4>
-                        <p class="text-gray-600 mb-4">當日無特別安排午餐，可於機場或途中簡餐。晚餐原建議以蔬食為主，若要兼顧葷食與蛋奶素食者，推薦以下備選：</p>
+                        <p class="text-gray-600 mb-4">當日無特別安排午餐，可於機場或途中簡餐。為兼顧葷食與蛋奶素食者，推薦以下備選：</p>
                         <div class="notes-item">
                            <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg>
-                           <div><strong>首選: Cervecería Catalana</strong><br>
-                                <span class="text-sm text-gray-600">巴塞隆納在地人氣tapas餐廳，距離米拉之家步行約10分鐘。提供經典西班牙小吃如西班牙烘蛋、烤肉串等，也有烤蔬菜、馬鈴薯等素食小點，菜單種類豐富 (cerveseria-catalana.restaurants-world.com)。價格平實，每人約€20–30。</span>
+                           <div><strong>首選: Ciudad Condal</strong><br>
+                                <span class="text-sm text-gray-600">巴塞隆納最受歡迎的Tapas餐廳之一，以提供「大量素食選項」聞名。葷食者可享用各式海鮮與伊比利火腿，素食者則有經典的帕德龍辣椒、炸馬鈴薯塊、西班牙烘蛋等豐富選擇。</span>
                            </div>
                         </div>
                         <div class="notes-item">
                            <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg>
-                           <div><strong>其他選項: La Pepita 或 Ciudad Condal</strong><br>
-                                <span class="text-sm text-gray-600">若傾向輕食或國際風味，這兩家創意小吃吧也提供多元菜色，素食者可選擇西班牙烘蛋、帕德龍椒、起司沙拉等，肉食者則有火腿、生炒魷魚等 (tasteatlas.com)。</span>
+                           <div><strong>備選: Mimo's Born</strong><br>
+                                <span class="text-sm text-gray-600">位於波恩區的現代Tapas餐廳，菜單明確列出多種素食Tapas，如蘑菇可樂餅、脆皮茄子佐山羊起司等，同時也提供傳統的肉類與海鮮選擇。</span>
                            </div>
                         </div>
                     </div>
@@ -277,36 +295,35 @@
                  <div class="space-y-6">
                     <div>
                         <h4 class="font-bold text-lg mb-2 text-spain">📍 行程規劃</h4>
-                        <div class="itinerary-item"><span class="time-badge">上午</span><div><strong>從飯店出發</strong><br><span class="text-sm text-gray-600">搭乘地鐵 L4 -> L5 到 Sagrada Família 站</span></div></div>
-                        <div class="itinerary-item"><span class="time-badge">09:00 - 10:30</span><div><strong>聖家堂 (Sagrada Família)</strong><br><span class="text-sm text-gray-600">高第畢生心血的結晶，巴塞隆納的象徵。建議預約 09:00 時段，可自選是否登塔。</span></div></div>
+                        <div class="itinerary-item"><span class="time-badge">09:00 - 10:30</span><div><strong>聖家堂 (Sagrada Família)</strong><br><span class="text-sm text-gray-600">從飯店出發，搭乘地鐵 L4 -> L5 到 Sagrada Família 站，參觀高第畢生心血的結晶。</span></div></div>
                         <div class="timeline-connector"><div class="line"></div><span>沿著高第大道步行約 15 分鐘 (1 公里)</span></div>
                         <div class="itinerary-item"><span class="time-badge">10:45 - 12:00</span><div><strong>聖保羅現代主義園區</strong><br><span class="text-sm text-gray-600">前身為醫院，是歐洲最大的現代主義建築群，色彩繽紛的馬賽克與雕塑令人驚嘆。</span></div></div>
                         <div class="timeline-connector"><div class="line"></div><span>搭乘地鐵 L5 從 Sant Pau | Dos de Maig 到 Diagonal</span></div>
                         <div class="itinerary-item"><span class="time-badge">12:30 - 14:00</span><div><strong>午餐時間</strong><br><span class="text-sm text-gray-600">在格拉西亞大道附近用餐。</span></div></div>
                         <div class="timeline-connector"><div class="line"></div><span>步行約 5 分鐘</span></div>
-                        <div class="itinerary-item"><span class="time-badge">14:00 - 15:15</span><div><strong>米拉之家 (Casa Milà)</strong><br><span class="text-sm text-gray-600">再次回到格拉西亞大道，深入探索米拉之家的內部結構與屋頂奇特的煙囪。(14:00 時段)</span></div></div>
+                        <div class="itinerary-item"><span class="time-badge">14:00 - 15:15</span><div><strong>米拉之家 (Casa Milà)</strong><br><span class="text-sm text-gray-600">深入探索米拉之家的內部結構與屋頂奇特的煙囪。</span></div></div>
                         <div class="timeline-connector"><div class="line"></div><span>步行至公車站 + 搭乘 24 / V19 公車</span></div>
-                        <div class="itinerary-item"><span class="time-badge">15:30 - 18:30</span><div><strong>桂爾公園 (Park Güell)</strong><br><span class="text-sm text-gray-600">高第設計的童話公園，欣賞著名的馬賽克蜥蜴與城市全景。(16:30-17:00 入場)</span></div></div>
+                        <div class="itinerary-item"><span class="time-badge">16:30 - 18:30</span><div><strong>桂爾公園 (Park Güell)</strong><br><span class="text-sm text-gray-600">高第設計的童話公園，欣賞著名的馬賽克蜥蜴與城市全景。</span></div></div>
                         <div class="timeline-connector"><div class="line"></div><span>搭乘公車或地鐵前往 Gràcia 區</span></div>
                         <div class="itinerary-item"><span class="time-badge">19:00 - </span><div><strong>晚餐時間</strong><br><span class="text-sm text-gray-600">在充滿文青氣息的格拉西亞區享用晚餐。</span></div></div>
                     </div>
                     <div class="border-t pt-6">
                          <h4 class="font-bold text-lg mb-2 text-blue-800">📝 行程檢視</h4>
-                         <p class="text-gray-700">今日安排高第建築一日遊，行程緊湊但時間計算合理。請務必提前預訂聖家堂及桂爾公園門票並守時入場。若上午行程延誤，可視情況略過聖保羅醫院園區或縮短其停留，以確保下午計劃不中斷。遊覽桂爾公園時地勢起伏較大，留意鞋履與防曬補水。總體而言，今日行程雖滿但對熱愛建築的人士合理可行。</p>
+                         <p class="text-gray-700">本日的行程動線合理且高效。若上午行程延誤，可視情況略過聖保羅醫院園區或縮短其停留，以確保下午計劃不中斷。遊覽桂爾公園時地勢起伏較大，留意鞋履與防曬補水。</p>
                     </div>
                     <div class="border-t pt-6">
                         <h4 class="font-bold text-lg mb-2 text-green-600">🍽️ 用餐建議</h4>
-                        <p class="text-gray-600 mb-4"><strong>午餐：</strong>原計畫的 Honest Greens 是健康平價的好選擇。此外也可考慮 Zenith Brunch & Cocktails，一家網紅早午餐店，提供從全素到經典班尼迪克蛋等多元選擇，適合混合飲食者 (happycow.net, yelp.com)。<br><strong>晚餐：</strong>原建議的餐廳菜色偏單一。建議改考慮以下更能同時滿足葷素同行的餐廳：</p>
+                        <p class="text-gray-600 mb-4"><strong>午餐：</strong>Honest Greens 是強調健康新鮮的好選擇。<strong>晚餐：</strong>原備選的 La Paradeta Gràcia 為純海鮮餐廳，不適合蛋奶素食者，已排除。建議考慮以下更能同時滿足葷素同行的餐廳：</p>
                          <div class="notes-item">
                             <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg>
-                            <div><strong>首選: La Pepita</strong><br>
-                                 <span class="text-sm text-gray-600">位於格拉西亞區的創意小酒館，以融合全球風味的塔帕小吃聞名。菜單上既有適合素食者的創意料理（例如烤蔬菜三明治、松露馬鈴薯等），也有滿足葷食者的伊比利火腿和海鮮料理 (bcn.travel)。環境時髦而價格中等（人均€25左右）。</span>
+                            <div><strong>首選: Veg World India</strong><br>
+                                 <span class="text-sm text-gray-600">您的首選餐廳非常出色，應予以保留。它為素食者提供了美味且道地的印度料理，而其豐富的香料與風味也能吸引葷食夥伴。</span>
                             </div>
                          </div>
                          <div class="notes-item">
                             <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg>
-                            <div><strong>備選: El Glop de la Rambla 或 Bodega La Peninsular</strong><br>
-                                 <span class="text-sm text-gray-600">如果想嚐試正宗加泰羅尼亞海鮮飯，這兩家傳統餐館都有供應蔬菜燴飯和海鮮飯，可讓葷素食者各取所需。</span>
+                            <div><strong>備選: Gràcia區的「Platillos」餐廳或高評價義大利餐廳</strong><br>
+                                 <span class="text-sm text-gray-600">尋找一家現代的「Platillos」(小碟菜)餐廳，通常提供創新的蔬菜料理與精緻的肉類菜色。或選擇一家好的義大利餐廳，本質上對葷素食者都非常友好。</span>
                             </div>
                          </div>
                      </div>
@@ -319,34 +336,40 @@
                  <div class="space-y-6">
                     <div>
                         <h4 class="font-bold text-lg mb-2 text-spain">📍 行程規劃</h4>
-                        <div class="itinerary-item"><span class="time-badge">上午</span><div><strong>從飯店出發</strong><br><span class="text-sm text-gray-600">搭乘地鐵 L4 -> L1/L3 到 Espanya 站</span></div></div>
-                        <div class="itinerary-item"><span class="time-badge">10:00 - 12:00</span><div><strong>加泰隆尼亞國家藝術館 (MNAC)</strong><br><span class="text-sm text-gray-600">位於蒙特惠克山上，收藏了世界上最豐富的羅馬式藝術品。</span></div></div>
+                        <div class="itinerary-item"><span class="time-badge">10:00 - 12:00</span><div><strong>加泰隆尼亞國家藝術館 (MNAC)</strong><br><span class="text-sm text-gray-600">從飯店出發，搭乘地鐵前往蒙特惠克山參觀。</span></div></div>
                         <div class="timeline-connector"><div class="line"></div><span>步行下山</span></div>
-                        <div class="itinerary-item"><span class="time-badge">12:00 - 13:00</span><div><strong>魔幻噴泉 / 西班牙廣場</strong><br><span class="text-sm text-gray-600">在MNAC正前方的廣場與噴泉拍照留念，景色壯觀。</span></div></div>
+                        <div class="itinerary-item"><span class="time-badge">12:00 - 13:00</span><div><strong>魔幻噴泉 / 西班牙廣場</strong><br><span class="text-sm text-gray-600">在MNAC正前方的廣場與噴泉拍照留念。</span></div></div>
                         <div class="timeline-connector"><div class="line"></div><span>搭乘地鐵 L1/L3 從 Espanya 到 Catalunya/Passeig de Gràcia</span></div>
                         <div class="itinerary-item"><span class="time-badge">14:00 - 15:30</span><div><strong>午餐時間</strong></div></div>
                         <div class="timeline-connector"><div class="line"></div><span>步行</span></div>
                         <div class="itinerary-item"><span class="time-badge">16:00 - 18:00</span><div><strong>購物時段</strong><br><span class="text-sm text-gray-600">進行最後的購物衝刺。</span></div></div>
                         <div class="timeline-connector"><div class="line"></div><span>搭乘地鐵 L4 從 Passeig de Gràcia 到 Barceloneta</span></div>
-                        <div class="itinerary-item"><span class="time-badge">19:30 - 22:00</span><div><strong>晚餐 & 夜間散步</strong><br><span class="text-sm text-gray-600">在舊港 (Port Vell) 附近的餐廳用餐，飯後到巴塞羅內塔 (Barceloneta) 海灘吹海風、看夜景。</span></div></div>
+                        <div class="itinerary-item"><span class="time-badge">19:30 - 22:00</span><div><strong>晚餐 & 夜間散步</strong><br><span class="text-sm text-gray-600">在巴塞羅內塔 (Barceloneta) 海灘附近用餐並散步。</span></div></div>
                     </div>
                     <div class="border-t pt-6">
                          <h4 class="font-bold text-lg mb-2 text-blue-800">📝 行程檢視</h4>
-                         <p class="text-gray-700"><strong>注意：</strong>MNAC 的免費參觀時段為週日15:00後或每月第一個週日 (museunacional.cat)，上午參觀需購票。另外，西班牙週日多數商店休息，格拉西亞大道的精品店大多不營業 (ajtravel.tw)。若需購物，建議改往週日營業的購物中心 Westfield Glòries 或 Maremagnum 海港購物中心 (westfield.com)。</p>
+                         <p class="text-gray-700"><strong>關鍵修正：</strong>MNAC 的常規免費開放日是每月第一個週日，您到訪的8月24日(第四個週日)需購票(€12)。另外，雖然您到訪時夏季旅遊區的商店週日可能營業(12:00-20:00)，但其他多數商店仍會歇業，請注意營業時間。</p>
                     </div>
                     <div class="border-t pt-6">
                         <h4 class="font-bold text-lg mb-2 text-green-600">🍽️ 用餐建議</h4>
-                        <p class="text-gray-600 mb-4"><strong>午餐：</strong>El Nacional 美食廣場能滿足不同口味。或者可考慮 Ciudad Condal，一家著名的tapas吧，提供多樣素食小點與海鮮，是體驗在地人氣氛的好去處 (tripadvisor.com)。<br><strong>晚餐：</strong>原建議的餐廳以素食為主。為兼顧葷素，建議以下兩間鄰近海港的餐廳：</p>
+                        <p class="text-gray-600 mb-4"><strong>午餐：</strong>El Nacional 美食廣場視覺吸引但遊客導向。建議可考慮：</p>
+                         <div class="notes-item">
+                           <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg>
+                           <div><strong>備選: La Gastronómica</strong><br>
+                                <span class="text-sm text-gray-600">強烈推薦的替代方案。距離西班牙廣場僅幾步之遙，提供精緻的「Platillos」，菜單上既有備受讚譽的葷食，也有專為素食者設計的布拉塔起司沙拉、烤蔬菜等。</span>
+                           </div>
+                        </div>
+                        <p class="text-gray-600 my-4"><strong>晚餐：</strong>為兼顧葷素，建議以下兩間鄰近海港的餐廳：</p>
                         <div class="notes-item">
                            <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg>
-                           <div><strong>首選: Ziryab Fusion Tapas Bar</strong><br>
-                                <span class="text-sm text-gray-600">位於波恩區的中東融合小吃吧，菜單清楚標示素食及含肉菜色，提供鷹嘴豆泥、烤蔬菜捲等純素小吃，也有羊肉串、雞肉皮塔等葷食料理 (tripadvisor.com)。人均約€30。</span>
+                           <div><strong>首選: BarCeloneta Sangria Bar</strong><br>
+                                <span class="text-sm text-gray-600">若想體驗更休閒的海濱氛圍，這家酒吧是絕佳選擇。它以提供美味的素食Tapas和出色的桑格莉亞酒而聞名，能在輕鬆愉快的氣氛中結束一天的行程。</span>
                            </div>
                         </div>
                         <div class="notes-item">
                            <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg>
-                           <div><strong>備選: Merendero de la Mari</strong><br>
-                                <span class="text-sm text-gray-600">位於舊港碼頭的經典西班牙餐廳，主打海鮮和傳統西班牙菜，亦提供時蔬燉飯、奶酪沙拉等蔬食友善選項 (merenderodelamari.com)。人均約€35-40，建議提前訂位。</span>
+                           <div><strong>備選: 傳統海濱餐廳</strong><br>
+                                <span class="text-sm text-gray-600">在Passeig de Joan de Borbó海濱大道上，多數傳統餐廳都能滿足您的需求。葷食者可品嚐海鮮飯，素食者則可點選烤甜椒、帕德龍辣椒等經典Tapas。</span>
                            </div>
                         </div>
                     </div>
@@ -359,8 +382,7 @@
                 <div class="space-y-6">
                     <div>
                         <h4 class="font-bold text-lg mb-2 text-spain">📍 行程規劃</h4>
-                        <div class="itinerary-item"><span class="time-badge">上午</span><div><strong>從飯店出發</strong><br><span class="text-sm text-gray-600">步行約 20-25 分鐘 或 搭乘地鐵/計程車約 5-10 分鐘</span></div></div>
-                        <div class="itinerary-item"><span class="time-badge">白天</span><div><strong>AMEE 會議 @ CCIB</strong></div></div>
+                        <div class="itinerary-item"><span class="time-badge">白天</span><div><strong>AMEE 會議 @ CCIB</strong><br><span class="text-sm text-gray-600">從飯店出發，前往巴塞隆納國際會議中心 (CCIB) 參加 AMEE 醫學教育年會。</span></div></div>
                         <div class="timeline-connector"><div class="line"></div><span>搭乘地鐵 (約 30-40 分鐘) 或計程車 (約 20-30 分鐘)</span></div>
                         <div class="itinerary-item"><span class="time-badge">21:00 - 22:00</span><div><strong>Taiwan Night @ Barceló Sants 飯店</strong></div></div>
                     </div>
@@ -381,8 +403,6 @@
                 <div class="space-y-6">
                     <div>
                         <h4 class="font-bold text-lg mb-2 text-spain">📍 行程規劃</h4>
-                        <div class="itinerary-item"><span class="time-badge">上午</span><div><strong>從飯店出發</strong></div></div>
-                        <div class="timeline-connector"><div class="line"></div><span>步行約 20-25 分鐘 或 搭乘地鐵/計程車約 5-10 分鐘</span></div>
                         <div class="itinerary-item"><span class="time-badge">全天</span><span>AMEE 會議 @ Centre de Convencions Internacional de Barcelona (CCIB)</span></div>
                     </div>
                     <div class="border-t pt-6">
@@ -395,7 +415,7 @@
                         <div class="notes-item">
                            <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg>
                            <div><strong>首選: Xiringuito Escribà</strong><br>
-                                <span class="text-sm text-gray-600">位於Bogatell海灘旁的知名餐廳，以各式傳統海鮮燉飯聞名，也提供兩款特製的純素/全蔬菜燉飯 (happycow.net, tripadvisor.com)。可與同行者分享海鮮大鍋飯，同時為素食友人單點時蔬菇菇燉飯。人均預算約€40。</span>
+                                <span class="text-sm text-gray-600">位於Bogatell海灘旁的知名餐廳，以各式傳統海鮮燉飯聞名，也提供兩款特製的純素/全蔬菜燉飯。可與同行者分享海鮮大鍋飯，同時為素食友人單點時蔬菇菇燉飯。人均預算約€40。</span>
                            </div>
                         </div>
                          <div class="notes-item">
@@ -414,8 +434,8 @@
                  <div class="space-y-6">
                     <div>
                         <h4 class="font-bold text-lg mb-2 text-paris">📍 行程規劃</h4>
-                        <div class="itinerary-item"><span class="time-badge">上午</span><div><strong>告別巴塞隆納，飛往巴黎</strong><br><span class="text-sm text-gray-600">搭乘法國航空 AF1149 (09:55 - 11:50) 從巴塞隆納 (BCN) 飛往巴黎 (CDG)。</span></div></div>
-                        <div class="itinerary-item"><span class="time-badge">中午</span><div><strong>抵達與午餐</strong><br><span class="text-sm text-gray-600">中午抵達巴黎後，前往住宿飯店（巴黎第2區 Urban Luxury Opera Gustav Klimt）。放置行李後，搭乘地鐵前往蒙馬特區享用午餐。</span></div></div>
+                        <div class="itinerary-item"><span class="time-badge">09:55 - 11:50</span><div><strong>告別巴塞隆納，飛往巴黎</strong><br><span class="text-sm text-gray-600">搭乘法國航空 AF1149 從巴塞隆納 (BCN) 飛往巴黎 (CDG)。</span></div></div>
+                        <div class="itinerary-item"><span class="time-badge">中午</span><div><strong>抵達與午餐</strong><br><span class="text-sm text-gray-600">抵達巴黎後，前往住宿飯店（巴黎第2區）。放置行李後，搭乘地鐵前往蒙馬特區享用午餐。</span></div></div>
                         <div class="timeline-connector"><div class="line"></div><span>步行穿過廣場並搭乘蒙馬特纜車登頂</span></div>
                         <div class="itinerary-item"><span class="time-badge">午後</span><div><strong>蒙馬特與聖心堂 (建議停留 1.5 小時)</strong><br><span class="text-sm text-gray-600">參觀聖心堂（Sacré-Cœur），欣賞教堂內部與巴黎市景。隨後漫步於畫家廣場 (Place du Tertre)，感受藝術氛圍，並經過愛牆 (Le Mur des Je t’aime)。</span></div></div>
                         <div class="timeline-connector"><div class="line"></div><span>步行至雅比斯街區</span></div>
@@ -427,18 +447,17 @@
                     </div>
                     <div class="border-t pt-6">
                         <h4 class="font-bold text-lg mb-2 text-green-600">🍽️ 用餐建議</h4>
-                        <p class="text-gray-600 mb-4"><strong>午餐：</strong>原計畫推薦的 Crêperie Brocéliande 是經濟實惠的法式風情選擇。此外也可考慮：</p>
+                        <p class="text-gray-600 mb-4"><strong>午餐：</strong>Crêperie Brocéliande 是經濟實惠的法式風情選擇。<strong>晚餐：</strong>原建議的 Le Relais Gascon 以肉類沙拉聞名，素食者選項較單調。建議考慮：</p>
                         <div class="notes-item">
                            <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg>
-                           <div><strong>備選: Chez Plumeau</strong><br>
-                                <span class="text-sm text-gray-600">位於畫家廣場附近，有美麗戶外花園座位的法式餐館，供應傳統法式家常菜，包含魚類、肉類與素食餐點（如烤蔬菜千層麵）(worldinparis.com, happycow.net)。人均約€20-25。</span>
+                           <div><strong>首選: Le Coq & Fils</strong><br>
+                                <span class="text-sm text-gray-600">雖是「禽類之家」，但官方介紹明確表示「對素食者非常友好」，提供多種素食前菜選擇。葷食者可享用高品質烤雞，素食者則有朝鮮薊鷹嘴豆泥等精心設計的菜餚，是完美的折衷方案。</span>
                            </div>
                         </div>
-                        <p class="text-gray-600 my-4"><strong>晚餐：</strong>原計畫安排的 Le Relais Gascon 以超大份量沙拉聞名。此外也可考慮：</p>
                         <div class="notes-item">
                            <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg>
-                           <div><strong>備選: Les Apôtres de Pigalle</strong><br>
-                                <span class="text-sm text-gray-600">距蒙馬特不遠的創意法式-南美風味餐吧。餐點以分享小盤為主，從素食到魚肉到牛排都有，價格公道 (tripadvisor.com)。空間不大，建議提前預約。人均約€30-35。</span>
+                           <div><strong>備選: Breizh Café</strong><br>
+                                <span class="text-sm text-gray-600">若想體驗更高層次的法式薄餅，這是絕佳選擇。菜單提供多種鹹味可麗餅，包含經典的火腿雞蛋口味，以及專為素食者設計的時蔬起司口味。</span>
                            </div>
                         </div>
                     </div>
@@ -450,43 +469,40 @@
                 <div class="space-y-6">
                     <div>
                         <h4 class="font-bold text-lg mb-2 text-paris">📍 行程規劃</h4>
-                        <div class="itinerary-item"><span class="time-badge">上午</span><div><strong>從飯店出發</strong><br><span class="text-sm text-gray-600">從 Réaumur–Sébastopol 站搭乘地鐵4號線至 Châtelet 站，換乘1號線在 Charles de Gaulle–Étoile 站下車。</span></div></div>
-                        <div class="itinerary-item"><span class="time-badge">10:00</span><div><strong>凱旋門 (Arc de Triomphe) (建議停留 1 小時)</strong><br><span class="text-sm text-gray-600">欣賞拿破崙為紀念戰功而建的宏偉拱門，可選擇登頂俯瞰香榭麗舍大道。</span></div></div>
-                        <div class="timeline-connector"><div class="line"></div><span>步行</span></div>
-                        <div class="itinerary-item"><span class="time-badge">上午</span><div><strong>香榭麗舍大道 (Champs-Élysées) (建議停留 30-45 分鐘)</strong><br><span class="text-sm text-gray-600">漫步於「世界上最美麗的大道」，欣賞兩旁精品店林立的繁華風光。</span></div></div>
-                        <div class="timeline-connector"><div class="line"></div><span>從 Franklin D. Roosevelt 站搭乘地鐵9號線至 Trocadéro 站</span></div>
-                        <div class="itinerary-item"><span class="time-badge">中午</span><div><strong>特洛卡德羅廣場 (建議停留 15 分鐘)</strong><br><span class="text-sm text-gray-600">這裡是拍攝艾菲爾鐵塔全景的極佳角度，可在此拍照留念。</span></div></div>
+                        <div class="itinerary-item"><span class="time-badge">10:00</span><div><strong>凱旋門 (Arc de Triomphe) (建議停留 1 小時)</strong><br><span class="text-sm text-gray-600">從飯店出發，搭地鐵至 Charles de Gaulle–Étoile 站，登頂瞭望香榭麗舍大道。</span></div></div>
+                        <div class="timeline-connector"><div class="line"></div><span>步行或搭乘地鐵</span></div>
+                        <div class="itinerary-item"><span class="time-badge">上午</span><div><strong>香榭麗舍大道 & 特洛卡德羅廣場</strong><br><span class="text-sm text-gray-600">漫步大道，再到特洛卡德羅廣場拍攝艾菲爾鐵塔全景。</span></div></div>
                         <div class="timeline-connector"><div class="line"></div><span>步行約10分鐘橫跨伊娜橋</span></div>
-                        <div class="itinerary-item"><span class="time-badge">午餐</span><div><strong>午餐時間</strong></div></div>
+                        <div class="itinerary-item"><span class="time-badge">午餐</span><div><strong>午餐時間 @ 鐵塔附近</strong></div></div>
                         <div class="timeline-connector"><div class="line"></div><span>步行約5分鐘</span></div>
-                        <div class="itinerary-item"><span class="time-badge">下午</span><div><strong>艾菲爾鐵塔 (Tour Eiffel) (建議停留 2 小時)</strong><br><span class="text-sm text-gray-600">近距離感受巴黎地標的震撼，務必提前在官網預訂門票登塔，或在戰神廣場草坪休憩。</span></div></div>
-                        <div class="timeline-connector"><div class="line"></div><span>從 Trocadéro 站搭乘地鐵9號線 -> 1號線至 Hôtel de Ville 站</span></div>
+                        <div class="itinerary-item"><span class="time-badge">下午</span><div><strong>艾菲爾鐵塔 (Tour Eiffel) (建議停留 2 小時)</strong><br><span class="text-sm text-gray-600">近距離感受巴黎地標的震撼，務必提前預訂門票登塔。</span></div></div>
+                        <div class="timeline-connector"><div class="line"></div><span>搭乘地鐵</span></div>
                         <div class="itinerary-item"><span class="time-badge">晚餐</span><div><strong>晚餐時間 @ 瑪黑區</strong></div></div>
                     </div>
                     <div class="border-t pt-6">
                          <h4 class="font-bold text-lg mb-2 text-blue-800">📝 行程檢視</h4>
-                         <p class="text-gray-700">此經典一日遊觀賞密度高但亮點集中，時間分配恰當。路線安排順暢，建議上午以地鐵或步行移動，午後從艾菲爾鐵塔區前往瑪黑區則可搭乘地鐵。請留意巴黎各景點的安檢隊伍，提前在線預訂門票可節省大量時間。如遇陰雨，高空景觀可能受影響，可視天氣稍作調整。</p>
+                         <p class="text-gray-700">這一天是步行馬拉松。強烈建議您善用Navigo週票，在主要區域之間搭乘地鐵，以有效管理體力。請留意各景點的安檢隊伍，提前在線預訂門票可節省大量時間。</p>
                     </div>
                     <div class="border-t pt-6">
                         <h4 class="font-bold text-lg mb-2 text-green-600">🍽️ 用餐建議</h4>
-                        <p class="text-gray-600 mb-4"><strong>午餐：</strong>原計畫的 Frame Brasserie 是時尚之選。此外也可考慮：</p>
+                        <p class="text-gray-600 mb-4"><strong>午餐：</strong>Frame Brasserie 是可靠選擇。或者可以考慮更具巴黎風情的方案：</p>
                         <div class="notes-item">
                            <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg>
-                           <div><strong>備選: Carette (卡黑特) Trocadéro 分店</strong><br>
-                                <span class="text-sm text-gray-600">鐵塔對岸的經典法式咖啡館，以熱巧克力和甜點聞名，也供應三明治、沙拉等輕食，素食與葷食皆有選擇 (tripadvisor.com)。</span>
+                           <div><strong>備選: 高品質麵包坊 (Boulangerie) 野餐</strong><br>
+                                <span class="text-sm text-gray-600">在鐵塔附近的高品質麵包坊購買法棍三明治（一份經典火腿奶油，一份蔬菜起司），然後到戰神廣場的草坪上，以艾菲爾鐵塔為背景享用午餐。</span>
                            </div>
                         </div>
-                        <p class="text-gray-600 my-4"><strong>晚餐：</strong>原計畫的 Les Philosophes 是體驗當地咖啡館文化的好地方。如需其他選擇，瑪黑區還有許多餐飲值得一試：</p>
+                        <p class="text-gray-600 my-4"><strong>晚餐：</strong>Les Philosophes 是體驗當地文化的好地方。如需其他選擇，瑪黑區還有：</p>
                          <div class="notes-item">
                            <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg>
-                           <div><strong>備選 1: Miznon</strong><br>
-                                <span class="text-sm text-gray-600">人氣中東風味小館，以創新口袋皮塔料理出名，素食和葷食選擇都很豐富，例如烤整顆花椰菜（純素）和牛肉燉肉皮塔 (parisbymouth.com)。用餐方式快捷隨意，價格經濟。</span>
+                           <div><strong>備選 1: L'As du Fallafel</strong><br>
+                                <span class="text-sm text-gray-600">瑪黑區的傳奇店家，提供世界級的鷹嘴豆泥三明治(Falafel, 素食)和沙威瑪(Shawarma, 葷食)，能以實惠價格品嚐巴黎最具代表性的街頭美食之一。</span>
                            </div>
                         </div>
                         <div class="notes-item">
                            <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg>
-                           <div><strong>備選 2: Le Grand Colbert</strong><br>
-                                <span class="text-sm text-gray-600">若傾向優雅的法式經典體驗，這家華麗的餐廳是絕佳選擇。菜單有專門的素食菜餚，也有經典鴨胸、牛排可選 (legrandcolbert.com)。人均預算約€50，適合作為隆重晚宴，建議預訂。</span>
+                           <div><strong>備選 2: 瑪黑區小酒館 (Bistro)</strong><br>
+                                <span class="text-sm text-gray-600">在孚日廣場周邊有大量的小酒館，其菜單通常能同時滿足葷素需求，例如牛排薯條搭配大份的山羊起司沙拉。</span>
                            </div>
                         </div>
                     </div>
@@ -498,39 +514,25 @@
                 <div class="space-y-6">
                     <div>
                         <h4 class="font-bold text-lg mb-2 text-paris">📍 行程規劃</h4>
-                        <div class="itinerary-item"><span class="time-badge">上午</span><div><strong>從飯店出發</strong><br><span class="text-sm text-gray-600">步行約15–20分鐘，或從 Sentier 站搭乘地鐵3號線至 Palais Royal – Musée du Louvre 站。</span></div></div>
-                        <div class="itinerary-item"><span class="time-badge">09:00</span><div><strong>羅浮宮博物館 (Musée du Louvre) (建議停留 3 小時)</strong><br><span class="text-sm text-gray-600">參觀世界三大博物館之一，務必提前上網預約時段，重點參觀《蒙娜麗莎》、勝利女神像等鎮館之寶。</span></div></div>
-                        <div class="timeline-connector"><div class="line"></div><span>從 Châtelet 站搭乘地鐵4號線至 Odéon 站</span></div>
+                        <div class="itinerary-item"><span class="time-badge">09:00</span><div><strong>羅浮宮博物館 (Musée du Louvre) (建議停留 3 小時)</strong><br><span class="text-sm text-gray-600">從飯店出發，參觀世界三大博物館之一。</span></div></div>
+                        <div class="timeline-connector"><div class="line"></div><span>步行或搭乘地鐵</span></div>
                         <div class="itinerary-item"><span class="time-badge">午餐</span><div><strong>午餐時間 @ 拉丁區</strong></div></div>
                         <div class="timeline-connector"><div class="line"></div><span>步行約 10 分鐘</span></div>
-                        <div class="itinerary-item"><span class="time-badge">下午</span><div><strong>巴黎聖母院 (Cathédrale Notre-Dame) (建議停留 1 小時)</strong><br><span class="text-sm text-gray-600">參觀浴火重生後的哥德式建築經典，欣賞宏偉的玫瑰花窗。可順道拜訪莎士比亞書店。</span></div></div>
-                        <div class="timeline-connector"><div class="line"></div><span>步行約5分鐘返回飯店附近</span></div>
+                        <div class="itinerary-item"><span class="time-badge">下午</span><div><strong>巴黎聖母院 (Cathédrale Notre-Dame) (建議停留 1 小時)</strong><br><span class="text-sm text-gray-600">參觀浴火重生後的哥德式建築經典，可順道拜訪莎士比亞書店。</span></div></div>
+                        <div class="timeline-connector"><div class="line"></div><span>返回飯店附近</span></div>
                         <div class="itinerary-item"><span class="time-badge">晚餐</span><div><strong>晚餐時間</strong></div></div>
                     </div>
                      <div class="border-t pt-6">
                          <h4 class="font-bold text-lg mb-2 text-blue-800">📝 行程檢視</h4>
-                         <p class="text-gray-700">旅行最後一天聚焦巴黎的人文風情。請務必提前預約羅浮宮參觀時段，至少預留2.5-3小時。下午參觀巴黎聖母院後，可順道拜訪著名的莎士比亞書店。整日行程文化氣息濃厚且節奏較悠閒，提醒您傍晚需返回飯店整理行李，準備隔天返程。</p>
+                         <p class="text-gray-700"><strong>羅浮宮提醒：</strong>2025年有部分展廳關閉(特別是西班牙繪畫館)，但週五開放時間延長至晚間9點，提供更多彈性。<strong>聖母院提醒：</strong>重新開放初期可能實施嚴格人流管制與預約制度，請密切關注官方資訊並及早行動。</p>
                      </div>
                      <div class="border-t pt-6">
                         <h4 class="font-bold text-lg mb-2 text-green-600">🍽️ 用餐建議</h4>
-                        <p class="text-gray-600 mb-4"><strong>午餐：</strong>原計畫的 Bouillon Racine 是體驗巴黎平民美食文化的好選擇。此外也可考慮：</p>
+                        <p class="text-gray-600 mb-4"><strong>午餐：</strong>Bouillon Racine 是兼具歷史感與現代創意的絕佳選擇。<strong>晚餐：</strong>L'Apibo 是精緻之選。或者，可以考慮在飯店附近更具在地風情的地點用餐：</p>
                         <div class="notes-item">
                            <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg>
-                           <div><strong>備選: Le Polidor</strong><br>
-                                <span class="text-sm text-gray-600">位於拉丁區的老字號餐廳，創立於1845年，保留傳統法式小酒館風情。菜單上既有經典葷食，也提供創意純素料理拼盤，對各種飲食偏好都很友好 (facebook.com)。</span>
-                           </div>
-                        </div>
-                        <p class="text-gray-600 my-4"><strong>晚餐：</strong>原定的 L’Apibo 是一家米其林推薦的法式創意餐廳，是體驗現代法式料理的絕佳選擇。若您傾向更傳統且輕鬆的氛圍，備選推薦：</p>
-                         <div class="notes-item">
-                           <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg>
-                           <div><strong>備選 1: Le Grand Colbert</strong><br>
-                                <span class="text-sm text-gray-600">（如前日未造訪）可在今晚前往體驗其迷人氛圍與經典菜色。不僅環境出色，他們的菜單也有專門的素食料理區 (legrandcolbert.com)。</span>
-                           </div>
-                        </div>
-                        <div class="notes-item">
-                           <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg>
-                           <div><strong>備選 2: Bouillon Chartier Grands Boulevards</strong><br>
-                                <span class="text-sm text-gray-600">如果您想以平實價格再體驗一次傳統法式大眾餐廳的熱鬧氣氛，這家百年餐廳是個好選項，但風格與中午的 Bouillon Racine 類似。</span>
+                           <div><strong>備選: 蒙特吉爾街 (Rue Montorgueil)</strong><br>
+                                <span class="text-sm text-gray-600">強烈推薦您在此享用巴黎的最後一頓晚餐。這條熱鬧的行人徒步美食街，距離您的飯店不遠，街道兩旁林立著從歷史悠久的甜點店、經典小酒館到海鮮專賣店的各式餐廳，提供了一個充滿活力的用餐氛圍和無數的選擇，能為您的旅程畫下完美句點。</span>
                            </div>
                         </div>
                     </div>
@@ -554,6 +556,31 @@
                     <div>
                         <h4 class="font-bold text-lg mb-2 text-travel">✈️ 行程</h4>
                         <div class="itinerary-item"><span class="time-badge">08:35 - 10:15</span><span>從香港(HKG)搭乘國泰 CX432 返回高雄(KHH) 🎉</span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Backup Plans Panel -->
+            <div id="backup-plans" class="tab-panel">
+                <h3 class="text-2xl font-bold mb-6 text-main">✨ 備用方案 & 彈性選擇</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-xl font-bold mb-4 text-spain">巴塞隆納備選體驗</h4>
+                        <ul class="space-y-4">
+                            <li><strong>獻給建築與音樂愛好者:</strong> 加泰隆尼亞音樂宮 (Palau de la Música Catalana) - 與高第作品齊名的現代主義建築瑰寶。</li>
+                            <li><strong>獻給藝術史迷:</strong> 畢卡索美術館 (Picasso Museum) - 深入探索藝術大師的早期創作生涯。</li>
+                            <li><strong>獻給登高望遠者:</strong> 蒙特惠克城堡 (Montjuïc Castle) - 俯瞰城市與港口的絕佳全景視角。</li>
+                            <li><strong>獻給城市漫遊者:</strong> 波恩區 (El Born) 深度探索 - 沉浸在迷宮般的巷弄，探索獨立設計師精品店與手工作坊。</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-4 text-paris">巴黎備選體驗</h4>
+                        <ul class="space-y-4">
+                            <li><strong>獻給印象派狂熱者:</strong> 奧塞美術館 (Musée d'Orsay) - 由舊火車站改建，擁有最完整的印象派與後印象派收藏。</li>
+                            <li><strong>獻給超現實主義粉絲:</strong> 達利蒙馬特空間 (Dalí Paris) - 位於蒙馬特，收藏達利的雕塑與版畫，為藝術之旅增添奇幻色彩。</li>
+                            <li><strong>享受一個悠閒的午後:</strong> 盧森堡公園或聖日耳曼德佩區 - 在公園噴泉旁靜坐，或在左岸咖啡館追尋海明威、沙特的足跡。</li>
+                            <li><strong>雨天的完美備案:</strong> 巴黎廊街 (Covered Passages) - 探索19世紀的玻璃穹頂拱廊街，充滿古老書店與奇特古董店，是絕佳的購物與漫步體驗。</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -607,4 +634,3 @@
 
 </body>
 </html>
-�
