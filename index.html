@@ -145,8 +145,8 @@
         <div class="tab-button-container rounded-xl shadow-md mb-8">
             <button class="tab-button" data-tab="pre-trip">行前準備</button>
             <button class="tab-button" data-tab="day1">Day 1 (8/21)</button>
-            <button class="tab-button active" data-tab="day2">Day 2 (8/22)</button>
-            <button class="tab-button" data-tab="day3">Day 3 (8/23)</button>
+            <button class="tab-button" data-tab="day2">Day 2 (8/22)</button>
+            <button class="tab-button active" data-tab="day3">Day 3 (8/23)</button>
             <button class="tab-button" data-tab="day4">Day 4 (8/24)</button>
             <button class="tab-button" data-tab="day5">Day 5 (8/25)</button>
             <button class="tab-button" data-tab="day6">Day 6 (8/26)</button>
@@ -232,14 +232,14 @@
             </div>
 
             <!-- Day 2 Panel -->
-            <div id="day2" class="tab-panel active">
+            <div id="day2" class="tab-panel">
                 <h3 class="text-2xl font-bold mb-6 text-main">Day 2 - 8/22 (五): 抵達與經典建築巡禮</h3>
                 <div class="space-y-4">
                     <div class="itinerary-item"><span class="time-badge">上午</span><div><strong>抵達巴塞隆納</strong><br><span class="text-sm text-gray-600">00:20-08:50 搭乘 CX315 抵達馬德里，11:25-12:45 轉機抵達巴塞隆納(BCN)。<br>前往飯店 ZT The Golden Hotel Barcelona 辦理入住。</span></div></div>
                     <div class="timeline-connector"><div class="line"></div><span>搭乘地鐵 L4 (黃線) 從 Llacuna 站到 Jaume I 站</span></div>
                     <div class="itinerary-item"><span class="time-badge">15:30 - 17:00</span><div><strong>巴塞隆納主教堂 & 哥德區散步</strong><br><span class="text-sm text-gray-600">探索舊城區心臟地帶，感受古羅馬至今的歷史脈動與錯綜複雜的迷人巷弄。</span></div></div>
                     <div class="timeline-connector"><div class="line"></div><span>步行約 15-20 分鐘 (1.2 公里)</span></div>
-                    <div class="itinerary-item"><span class="time-badge">17:00 - 18:00</span><div><strong>CASA LOEWE 逛店</strong><br><span class="text-sm text-gray-600">在格拉西亞大道上，欣賞西班牙頂級皮件品牌的旗艦店建築與工藝。</span></div></div>
+                    <div class="itinerary-item"><span class="time-badge">17:00 - 18:00</span><div><strong>CASA LOEWE 逛店 (格拉西亞大道)</strong><br><span class="text-sm text-gray-600">在格拉西亞大道 (Passeig de Gràcia) 上，欣賞西班牙頂級皮件品牌的旗艦店建築與工藝。</span></div></div>
                     <div class="timeline-connector"><div class="line"></div><span>步行約 1 分鐘 (100 公尺)</span></div>
                     <div class="itinerary-item"><span class="time-badge">18:00 - 19:30</span><div><strong>巴特婁之家 (Casa Batlló)</strong><br><span class="text-sm text-gray-600">高第的奇幻之作，以海洋為靈感，充滿流動線條與色彩斑斕的馬賽克。(18:15 入場)</span></div></div>
                     <div class="timeline-connector"><div class="line"></div><span>步行約 7 分鐘 (550 公尺)</span></div>
@@ -266,29 +266,35 @@
             </div>
 
             <!-- Day 3 Panel -->
-            <div id="day3" class="tab-panel">
+            <div id="day3" class="tab-panel active">
                  <h3 class="text-2xl font-bold mb-6 text-main">Day 3 - 8/23 (六): 高第建築奇幻之旅</h3>
-                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Column 1: Itinerary -->
-                    <div class="space-y-6">
-                        <div>
-                            <h4 class="font-bold text-lg mb-2 text-spain">📍 上午行程</h4>
-                            <div class="itinerary-item"><span class="time-badge">09:00 - 10:30</span><span>聖家堂 09:00 時段 (+塔樓自選)</span></div>
-                            <div class="itinerary-item"><span class="time-badge">10:45 - 12:00</span><span>聖保羅現代主義園區</span></div>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-lg mb-2 text-spain">📍 下午行程</h4>
-                            <div class="itinerary-item"><span class="time-badge">14:00 - 15:15</span><span>米拉之家內部導覽 (14:00 時段)</span></div>
-                            <div class="itinerary-item"><span class="time-badge">15:30 - 16:00</span><span>咖啡 + 公車 24 / V19 前往桂爾公園</span></div>
-                            <div class="itinerary-item"><span class="time-badge">16:30 - 18:30</span><span>桂爾公園 16:30—17:00 入場</span></div>
-                        </div>
-                    </div>
-                    <!-- Column 2: Dining -->
-                    <div>
-                        <h4 class="font-bold text-lg mb-2 text-green-600">🍽️ 餐飲</h4>
+                 <div class="space-y-4">
+                    <div class="itinerary-item"><span class="time-badge">09:00 - 10:30</span><div><strong>聖家堂 (Sagrada Família)</strong><br><span class="text-sm text-gray-600">高第畢生心血的結晶，巴塞隆納的象徵。建議預約 09:00 時段，可自選是否登塔。</span></div></div>
+                    <div class="timeline-connector"><div class="line"></div><span>沿著高第大道步行約 15 分鐘 (1 公里)</span></div>
+                    <div class="itinerary-item"><span class="time-badge">10:45 - 12:00</span><div><strong>聖保羅現代主義園區</strong><br><span class="text-sm text-gray-600">前身為醫院，是歐洲最大的現代主義建築群，色彩繽紛的馬賽克與雕塑令人驚嘆。</span></div></div>
+                    <div class="timeline-connector"><div class="line"></div><span>搭乘地鐵 L5 從 Sant Pau | Dos de Maig 到 Diagonal</span></div>
+                    <div class="itinerary-item"><span class="time-badge">12:30 - 14:00</span><div><strong>午餐: Honest Greens</strong><br><span class="text-sm text-gray-600">在格拉西亞大道附近享用健康的午餐。</span></div></div>
+                    <div class="timeline-connector"><div class="line"></div><span>步行約 5 分鐘</span></div>
+                    <div class="itinerary-item"><span class="time-badge">14:00 - 15:15</span><div><strong>米拉之家 (Casa Milà)</strong><br><span class="text-sm text-gray-600">再次回到格拉西亞大道，深入探索米拉之家的內部結構與屋頂奇特的煙囪。(14:00 時段)</span></div></div>
+                    <div class="timeline-connector"><div class="line"></div><span>步行至公車站 + 搭乘 24 / V19 公車</span></div>
+                    <div class="itinerary-item"><span class="time-badge">15:30 - 18:30</span><div><strong>桂爾公園 (Park Güell)</strong><br><span class="text-sm text-gray-600">高第設計的童話公園，欣賞著名的馬賽克蜥蜴與城市全景。(16:30-17:00 入場)</span></div></div>
+                    <div class="timeline-connector"><div class="line"></div><span>搭乘公車或地鐵前往 Gràcia 區</span></div>
+                    <div class="itinerary-item"><span class="time-badge">19:00 - </span><div><strong>晚餐時間</strong><br><span class="text-sm text-gray-600">在充滿文青氣息的格拉西亞區享用晚餐。</span></div></div>
+                     <div>
+                        <h4 class="font-bold text-lg mb-2 text-green-600">🍽️ 晚餐建議</h4>
                         <p class="text-sm text-gray-500 mb-2 font-semibold">(膳食費: 3600/day)</p>
-                        <div class="itinerary-item"><span class="time-badge">12:30 - 14:00</span><span>午餐: Honest Greens Gran de Gràcia</span></div>
-                        <div class="itinerary-item"><span class="time-badge">19:00 - </span><span>晚餐: Veg World India (備案: La Paradeta Gràcia)</span></div>
+                        <div class="notes-item">
+                           <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg>
+                           <div><strong>首選: Veg World India</strong><br>
+                                <span class="text-sm text-gray-600">道地的印度素食料理，提供豐富的香料風味。</span>
+                           </div>
+                        </div>
+                        <div class="notes-item">
+                           <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg>
+                           <div><strong>備案: La Paradeta Gràcia</strong><br>
+                                <span class="text-sm text-gray-600">適合想品嚐新鮮海鮮的同行友人，像魚市場一樣自選海產。</span>
+                           </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -296,26 +302,31 @@
             <!-- Day 4 Panel -->
             <div id="day4" class="tab-panel">
                 <h3 class="text-2xl font-bold mb-6 text-main">Day 4 - 8/24 (日): 藝術購物與海港風情</h3>
-                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Column 1: Itinerary -->
-                    <div class="space-y-6">
-                        <div>
-                            <h4 class="font-bold text-lg mb-2 text-spain">📍 上午行程</h4>
-                            <div class="itinerary-item"><span class="time-badge">10:00 - 12:00</span><span>加泰隆尼亞國家藝術館 (MNAC) — 週日免費時段</span></div>
-                            <div class="itinerary-item"><span class="time-badge">12:00 - 13:00</span><span>魔幻噴泉 / 西班牙廣場拍照</span></div>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-lg mb-2 text-spain">📍 下午行程</h4>
-                            <div class="itinerary-item"><span class="time-badge">16:00 - 18:00</span><span>Passeig de Gràcia 最終採購 (El Corte Inglés 11:00—21:00)</span></div>
-                            <div class="itinerary-item"><span class="time-badge">夜間</span><span>Port Vell & Barceloneta 海邊夜景散步</span></div>
-                        </div>
-                    </div>
-                    <!-- Column 2: Dining -->
+                 <div class="space-y-4">
+                    <div class="itinerary-item"><span class="time-badge">10:00 - 12:00</span><div><strong>加泰隆尼亞國家藝術館 (MNAC)</strong><br><span class="text-sm text-gray-600">位於蒙特惠克山上，收藏了世界上最豐富的羅馬式藝術品，週日免費入場。</span></div></div>
+                    <div class="timeline-connector"><div class="line"></div><span>步行下山</span></div>
+                    <div class="itinerary-item"><span class="time-badge">12:00 - 13:00</span><div><strong>魔幻噴泉 / 西班牙廣場</strong><br><span class="text-sm text-gray-600">在MNAC正前方的廣場與噴泉拍照留念，景色壯觀。</span></div></div>
+                    <div class="timeline-connector"><div class="line"></div><span>搭乘地鐵 L1/L3 從 Espanya 到 Catalunya/Passeig de Gràcia</span></div>
+                    <div class="itinerary-item"><span class="time-badge">14:00 - 15:30</span><div><strong>午餐: El Nacional</strong><br><span class="text-sm text-gray-600">一個由舊車庫改造的大型美食廣場，擁有多家不同主題的餐廳，氣氛絕佳。</span></div></div>
+                    <div class="timeline-connector"><div class="line"></div><span>步行</span></div>
+                    <div class="itinerary-item"><span class="time-badge">16:00 - 18:00</span><div><strong>格拉西亞大道 (Passeig de Gràcia) 最終採購</strong><br><span class="text-sm text-gray-600">在巴塞隆納的香榭麗舍大道進行最後的購物衝刺，可逛英國宮百貨 (El Corte Inglés)。</span></div></div>
+                    <div class="timeline-connector"><div class="line"></div><span>搭乘地鐵 L4 從 Passeig de Gràcia 到 Barceloneta</span></div>
+                     <div class="itinerary-item"><span class="time-badge">19:30 - 22:00</span><div><strong>晚餐 & 夜間散步</strong><br><span class="text-sm text-gray-600">在舊港 (Port Vell) 附近的餐廳用餐，飯後到巴塞羅內塔 (Barceloneta) 海灘吹海風、看夜景。</span></div></div>
                     <div>
-                        <h4 class="font-bold text-lg mb-2 text-green-600">🍽️ 餐飲</h4>
+                        <h4 class="font-bold text-lg mb-2 text-green-600">🍽️ 晚餐建議</h4>
                         <p class="text-sm text-gray-500 mb-2 font-semibold">(膳食費: 3600/day)</p>
-                        <div class="itinerary-item"><span class="time-badge">14:00 - 15:30</span><span>午餐: El Nacional (多餐廳聯合空間)</span></div>
-                        <div class="itinerary-item"><span class="time-badge">19:30 - 22:00</span><span>晚餐: The Green Spot Port Vell (備案: Flax & Kale Tallers)</span></div>
+                        <div class="notes-item">
+                           <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg>
+                           <div><strong>首選: The Green Spot</strong><br>
+                                <span class="text-sm text-gray-600">必點素食: 黑松露披薩、碳烤花椰菜起司醬<br>全素餐廳，肉食者也可另點海邊Tapas</span>
+                           </div>
+                        </div>
+                        <div class="notes-item">
+                           <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg>
+                           <div><strong>備案: Flax & Kale Tallers</strong><br>
+                                <span class="text-sm text-gray-600">位於市中心，若不想走到海邊的另一絕佳選擇。</span>
+                           </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -467,7 +478,7 @@
             });
 
             // Set initial active tab
-            setActiveTab('day2');
+            setActiveTab('day3');
         });
     </script>
 
