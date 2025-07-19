@@ -128,12 +128,16 @@
 
         <!-- Tab Buttons -->
         <div class="tab-button-container rounded-xl shadow-md mb-8">
-            <button class="tab-button" data-tab="pre-trip">行前準備</button>
+            <button class="tab-button active" data-tab="pre-trip">行前準備</button>
             <button class="tab-button" data-tab="day1">Day 1 (8/21)</button>
-            <button class="tab-button active" data-tab="day2">Day 2 (8/22)</button>
-            <button class="tab-button" data-tab="day3-6">Day 3-6 (8/23-26)</button>
+            <button class="tab-button" data-tab="day2">Day 2 (8/22)</button>
+            <button class="tab-button" data-tab="day3">Day 3 (8/23)</button>
+            <button class="tab-button" data-tab="day4">Day 4 (8/24)</button>
+            <button class="tab-button" data-tab="day5">Day 5 (8/25)</button>
+            <button class="tab-button" data-tab="day6">Day 6 (8/26)</button>
             <button class="tab-button" data-tab="day7">Day 7 (8/27)</button>
-            <button class="tab-button" data-tab="day8-9">Day 8-9 (8/28-29)</button>
+            <button class="tab-button" data-tab="day8">Day 8 (8/28)</button>
+            <button class="tab-button" data-tab="day9">Day 9 (8/29)</button>
             <button class="tab-button" data-tab="day10">Day 10 (8/30)</button>
             <button class="tab-button" data-tab="day11">Day 11 (8/31)</button>
         </div>
@@ -141,7 +145,7 @@
         <!-- Tab Content Panels -->
         <div class="bg-white rounded-xl shadow-md p-6 md:p-8">
             <!-- Pre-trip Panel -->
-            <div id="pre-trip" class="tab-panel">
+            <div id="pre-trip" class="tab-panel active">
                 <h3 class="text-2xl font-bold mb-6 text-main">🧳 行前準備清單</h3>
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     <!-- Column 1: Documents & Language -->
@@ -183,10 +187,6 @@
                                <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h12A2.25 2.25 0 0 0 20.25 14.25V3m-16.5 0h16.5m-16.5 0H3.75m16.5 0h.008v.008h-.008V3Zm-12 6h.008v.008h-.008V9Zm2.25 0h.008v.008h-.008V9Zm2.25 0h.008v.008h-.008V9Zm2.25 0h.008v.008h-.008V9Z" /></svg>
                                <div><strong>治安:</strong> 西班牙與巴黎皆有扒手高發地區。建議使用貼身腰包，手提包不離身，並避免在戶外露出高價電子產品。</div>
                             </div>
-                             <div class="notes-item">
-                               <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg>
-                               <div><strong>醫療與保險:</strong> 確認保險涵蓋 COVID 與歐洲醫療費用。</div>
-                            </div>
                             <div class="notes-item">
                                <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 6.75Z" /></svg>
                                <div><strong>緊急電話:</strong><br>
@@ -212,18 +212,11 @@
                         <h4 class="font-bold text-lg mb-2 text-green-600">🍽️ 餐飲</h4>
                         <p> • 晚餐：機上精緻晚餐</p>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-lg mb-2 text-yellow-600">⚠️ 注意事項</h4>
-                        <div class="notes-item">
-                           <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" /></svg>
-                           <div><strong>行前準備:</strong> 檢查護照、機票、旅行文件是否備齊。</div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
             <!-- Day 2 Panel -->
-            <div id="day2" class="tab-panel active">
+            <div id="day2" class="tab-panel">
                 <h3 class="text-2xl font-bold mb-6 text-main">Day 2 - 8/22 (五): 抵達熱情的巴塞隆納</h3>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- Column 1: Itinerary & Hotel -->
@@ -258,58 +251,116 @@
                 </div>
             </div>
 
-            <!-- Day 3-6 Panel -->
-            <div id="day3-6" class="tab-panel">
-                <h3 class="text-2xl font-bold mb-6 text-main">Day 3~6 - 8/23~26: 巴塞隆納深度探索</h3>
+            <!-- Day 3 Panel -->
+            <div id="day3" class="tab-panel">
+                 <h3 class="text-2xl font-bold mb-6 text-main">Day 3 - 8/23 (六): 自由探索日</h3>
+                 <p>本日為自由時間，可以開始探索巴塞隆納的魅力！</p>
+            </div>
+
+            <!-- Day 4 Panel -->
+            <div id="day4" class="tab-panel">
+                <h3 class="text-2xl font-bold mb-6 text-main">Day 4 - 8/24 (日): 自由探索日</h3>
+                <p>本日為自由時間，繼續您的巴塞隆納冒險！</p>
+            </div>
+
+            <!-- Day 5 Panel -->
+            <div id="day5" class="tab-panel">
+                <h3 class="text-2xl font-bold mb-6 text-main">Day 5 - 8/25 (一): AMEE 會議 & Taiwan Night</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Left Column: Itinerary -->
-                    <div class="space-y-6">
-                        <div>
-                            <h4 class="font-bold text-lg mb-2 text-spain">📍 推薦景點</h4>
-                            <ul class="list-disc list-inside space-y-2">
-                                <li>聖家堂 (Sagrada Família)</li>
-                                <li>奎爾公園 (Park Güell)</li>
-                                <li>蘭布拉大道 (La Rambla)</li>
-                                <li>哥德區 (Gothic Quarter)</li>
-                                <li>畢卡索博物館 (Picasso Museum)</li>
-                                <li><span class="font-bold">[更多景點待補充]</span></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-lg mb-2 text-green-600">🍽️ 推薦美食</h4>
-                             <ul class="list-disc list-inside space-y-2">
-                                <li>Tapas 小菜</li>
-                                <li>Paella 海鮮燉飯</li>
-                                <li>Jamón Ibérico 伊比利火腿</li>
-                                <li><span class="font-bold">[更多美食待補充]</span></li>
-                            </ul>
-                        </div>
-                         <div>
-                            <h4 class="font-bold text-lg mb-2 text-yellow-600">⚠️ 注意事項</h4>
-                            <div class="notes-item">
-                               <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" /></svg>
-                               <div><strong>防曬:</strong> 享受陽光，但也要注意防曬。</div>
-                            </div>
-                            <div class="notes-item">
-                               <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" /></svg>
-                               <div><strong>電壓:</strong> 西班牙電壓為230V，插座為雙圓孔，需準備轉接頭。</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Right Column: Map -->
+                    <!-- Left Column: Schedule -->
                     <div>
-                        <div class="aspect-w-1 aspect-h-1 md:aspect-w-4 md:aspect-h-3 rounded-lg overflow-hidden shadow-lg">
-                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.686476665396!2d2.172151615425713!3d41.40362987926299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2dcd6342a39%3A0x208fb07d5e54d326!2sSagrada%20Fam%C3%ADlia!5e0!3m2!1sen!2stw!4v16788864 Sagrada Familia" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <h5 class="font-bold text-lg mb-2 text-spain">本日焦點</h5>
+                        <div class="itinerary-item"><span class="time-badge">白天</span><span>AMEE 會議 @ CCIB</span></div>
+                        <div class="itinerary-item"><span class="time-badge">21:00 - 22:00</span><span>Taiwan Night @ Barceló Sants 飯店</span></div>
+                    </div>
+                    <!-- Right Column: Locations & Travel -->
+                    <div>
+                        <h5 class="font-bold text-lg mb-2 text-spain">📍 交通距離估算</h5>
+                        <div class="space-y-4">
+                            <div class="notes-item">
+                               <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.092 1.21-.138 2.43-.138 3.662v4.159a2.25 2.25 0 0 0 1.521 2.121l4.5 1.125A2.25 2.25 0 0 0 12 21.75l4.5-1.125a2.25 2.25 0 0 0 1.521-2.121v-4.159Z" /></svg>
+                               <div><strong>住宿 → 會場:</strong><br>從 ZT Golden Hotel 到 CCIB 會議中心，步行約 20-25 分鐘，或搭乘地鐵/計程車約 5-10 分鐘。</div>
+                            </div>
+                            <div class="notes-item">
+                               <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.125-.504 1.125-1.125V14.25m-17.25 4.5v-1.875a3.375 3.375 0 0 1 3.375-3.375h9.75a3.375 3.375 0 0 1 3.375 3.375v1.875m-17.25 4.5h16.5" /></svg>
+                               <div><strong>會場 → Taiwan Night:</strong><br>從 CCIB 到 Barceló Sants 飯店距離較遠，建議搭乘地鐵 (約 30-40 分鐘) 或計程車 (約 20-30 分鐘)。</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Day 6 Panel -->
+            <div id="day6" class="tab-panel">
+                <h3 class="text-2xl font-bold mb-6 text-main">Day 6 - 8/26 (二): AMEE 會議</h3>
+                <div class="itinerary-item"><span class="time-badge">全天</span><span>AMEE 會議 @ Centre de Convencions Internacional de Barcelona (CCIB)</span></div>
+            </div>
             
-            <!-- Other Day Panels (simplified structure for now) -->
-            <div id="day7" class="tab-panel">...內容待補充...</div>
-            <div id="day8-9" class="tab-panel">...內容待補充...</div>
-            <div id="day10" class="tab-panel">...內容待補充...</div>
-            <div id="day11" class="tab-panel">...內容待補充...</div>
+            <!-- Day 7 Panel -->
+            <div id="day7" class="tab-panel">
+                 <h3 class="text-2xl font-bold mb-6 text-main">Day 7 - 8/27 (三): 前進！浪漫之都巴黎</h3>
+                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Column 1: Itinerary & Hotel -->
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 text-paris">✈️ 航班行程</h4>
+                            <div class="itinerary-item"><span class="time-badge">09:55 - 11:50</span><span>搭乘法國航空 AF1149 從巴塞隆納 (BCN) 飛往巴黎 (CDG)</span></div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 text-paris">🏨 住宿資訊</h4>
+                             <div class="notes-item">
+                               <svg class="notes-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m-3-1L11.25 3l-1.5.545m9.456 5.656-3-1m-1.5.545-3-1m3 1 3 1M9 12l-3 1m-3-1 3-1m12 3-3 1m3-1-3-1" /></svg>
+                               <div><strong>飯店:</strong><br>Urban Luxury Opera Gustav Klimt<br><span class="text-sm text-gray-500">106 Rue Réaumur, 75002 Paris</span></div>
+                            </div>
+                            <div class="itinerary-item"><span class="time-badge">下午</span><span>前往飯店Check-in，開啟巴黎時光</span></div>
+                        </div>
+                    </div>
+                    <!-- Column 2: Map -->
+                    <div class="rounded-lg overflow-hidden shadow-lg min-h-[300px]">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.572118635836!2d2.344835315674696!3d48.8665333792883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e3b97b6b217%3A0x33e18a6d41e754a5!2s106%20Rue%20R%C3%A9aumur%2C%2075002%20Paris%2C%20France!5e0!3m2!1sen!2stw!4v1689789123456!5m2!1sen!2stw" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <!-- Column 3: Nearby Attractions -->
+                    <div>
+                        <h4 class="font-bold text-lg mb-2 text-paris">📍 周邊景點建議</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start"><span class="text-pink-400 mr-2 mt-1">🏛️</span><div><strong>羅浮宮 (Musée du Louvre)</strong><br><span class="text-sm text-gray-500">世界級藝術殿堂 (步行約15-20分)</span></div></li>
+                            <li class="flex items-start"><span class="text-pink-400 mr-2 mt-1">🎭</span><div><strong>卡尼爾歌劇院 (Palais Garnier)</strong><br><span class="text-sm text-gray-500">金碧輝煌的歌劇院，建築本身就是藝術品 (步行約15分)</span></div></li>
+                            <li class="flex items-start"><span class="text-pink-400 mr-2 mt-1">🛍️</span><div><strong>薇薇安廊街 (Galerie Vivienne)</strong><br><span class="text-sm text-gray-500">巴黎最美的玻璃頂拱廊街之一 (步行約10分)</span></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Day 8 Panel -->
+            <div id="day8" class="tab-panel">
+                <h3 class="text-2xl font-bold mb-4 text-main">Day 8 - 8/28 (四): 巴黎漫遊時光</h3>
+                <p>...內容待補充...</p>
+            </div>
+            <!-- Day 9 Panel -->
+            <div id="day9" class="tab-panel">
+                <h3 class="text-2xl font-bold mb-4 text-main">Day 9 - 8/29 (五): 巴黎漫遊時光</h3>
+                <p>...內容待補充...</p>
+            </div>
+            <!-- Day 10 Panel -->
+            <div id="day10" class="tab-panel">
+                <h3 class="text-2xl font-bold mb-4 text-main">Day 10 - 8/30 (六): 滿載而歸</h3>
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="font-bold text-lg mb-2 text-travel">✈️ 行程</h4>
+                        <div class="itinerary-item"><span class="time-badge">上午</span><span>辦理飯店退房，並可進行最後的伴手禮採購 🛍️</span></div>
+                        <div class="itinerary-item"><span class="time-badge">12:05 - 06:15 (+1)</span><span>從巴黎(CDG)搭乘國泰 CX260 飛往香港</span></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Day 11 Panel -->
+            <div id="day11" class="tab-panel">
+                <h3 class="text-2xl font-bold mb-4 text-main">Day 11 - 8/31 (日): 抵達溫暖的家</h3>
+                 <div class="space-y-6">
+                    <div>
+                        <h4 class="font-bold text-lg mb-2 text-travel">✈️ 行程</h4>
+                        <div class="itinerary-item"><span class="time-badge">08:35 - 10:15</span><span>從香港(HKG)搭乘國泰 CX432 返回高雄(KHH) 🎉</span></div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </main>
@@ -320,39 +371,32 @@
     </footer>
 
     <script>
-        // JavaScript for tab functionality
-        const tabButtons = document.querySelectorAll('.tab-button');
-        const tabPanels = document.querySelectorAll('.tab-panel');
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabPanels = document.querySelectorAll('.tab-panel');
 
-        // Set the active tab based on the latest update
-        document.addEventListener('DOMContentLoaded', () => {
-            const defaultActiveTab = 'day2'; // The tab you just edited
-            
-            tabButtons.forEach(btn => {
-                btn.classList.remove('active');
-                if(btn.dataset.tab === defaultActiveTab) {
-                    btn.classList.add('active');
-                }
-            });
+            function setActiveTab(tabId) {
+                tabButtons.forEach(btn => {
+                    if (btn.dataset.tab === tabId) {
+                        btn.classList.add('active');
+                    } else {
+                        btn.classList.remove('active');
+                    }
+                });
 
-            tabPanels.forEach(panel => {
-                panel.classList.remove('active');
-                if(panel.id === defaultActiveTab) {
-                    panel.classList.add('active');
-                }
-            });
-        });
+                tabPanels.forEach(panel => {
+                    if (panel.id === tabId) {
+                        panel.classList.add('active');
+                    } else {
+                        panel.classList.remove('active');
+                    }
+                });
+            }
 
-
-        tabButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                tabButtons.forEach(btn => btn.classList.remove('active'));
-                tabPanels.forEach(panel => panel.classList.remove('active'));
-                button.classList.add('active');
-                const targetPanel = document.getElementById(button.dataset.tab);
-                if (targetPanel) {
-                    targetPanel.classList.add('active');
-                }
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    setActiveTab(button.dataset.tab);
+                });
             });
         });
     </script>
